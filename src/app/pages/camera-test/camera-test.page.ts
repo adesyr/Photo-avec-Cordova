@@ -14,7 +14,7 @@ export class CameraTestPage implements OnInit {
   public gallery: string[] = [];
 
   constructor(private camera: Camera, private storage: Storage) {
-    // Pour réupérer les données enregistrées
+    // Pour récupérer les données enregistrées
     storage.get('images').then (
       (data) => this.gallery = data || []
     );
